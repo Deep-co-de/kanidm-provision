@@ -446,6 +446,7 @@ fn main() -> Result<()> {
     let mut preexisting_entity_names = HashSet::new();
     preexisting_entity_names.extend(existing_groups.keys().cloned());
     preexisting_entity_names.extend(existing_persons.keys().cloned());
+    preexisting_entity_names.extend(existing_service_accounts.keys().cloned());
     preexisting_entity_names.extend(existing_oauth2s.keys().cloned());
 
     // Create and query a group that contains all (previously) provisioned entities.
